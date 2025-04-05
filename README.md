@@ -33,11 +33,10 @@ O objetivo deste projeto é praticar conceitos de automação, manipulação de 
     ```bash
     node nome-do-arquivo.js
 
-✍️ Autor
-Renata França
-github.com/Renatacpf
+✍️ Autor <br>
+Renata França <br>
+github.com/Renatacpf <br>
 
-
-📘 Disciplina: Programação para Automação de Testes
-👨‍🏫 Professor: Samuel Lucas
+📘 Disciplina: Programação para Automação de Testes <br>
+👨‍🏫 Professor: Samuel Lucas <br>
 🏫 Curso: Pós-Graduação em Automação de Testes de Software
