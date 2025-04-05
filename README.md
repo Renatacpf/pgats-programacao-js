@@ -26,11 +26,12 @@ O objetivo deste projeto é praticar conceitos de automação, manipulação de 
 
 2. Entre na pasta do projeto:
    ```bash
+    ```bash
     cd pgats-programacao-js
     Execute os arquivos .js no navegador ou via Node.js:
 
-4. Execute os arquivos .js no navegador ou via Node.js:
-   ```bash
+3. Execute os arquivos .js no navegador ou via Node.js:
+    ```bash
     node nome-do-arquivo.js
 
 ✍️ Autor
