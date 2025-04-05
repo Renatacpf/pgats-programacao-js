@@ -25,10 +25,12 @@ O objetivo deste projeto é praticar conceitos de automação, manipulação de 
    git clone https://github.com/Renatacpf/pgats-programacao-js.git
 
 2. Entre na pasta do projeto:
+   ```bash
     cd pgats-programacao-js
     Execute os arquivos .js no navegador ou via Node.js:
 
-3. Execute os arquivos .js no navegador ou via Node.js:
+4. Execute os arquivos .js no navegador ou via Node.js:
+   ```bash
     node nome-do-arquivo.js
 
 ✍️ Autor
