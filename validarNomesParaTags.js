@@ -7,7 +7,10 @@
 
 function validarNome(nomeOriginal) {
     // Remove espaços extras no começo e fim
-    const nomeLimpo = nomeOriginal.trim();
+    let nomeLimpo = nomeOriginal.trim();
+
+    // Remove caracteres especiais (deixa apenas letras e espaços)
+    nomeLimpo = nomeLimpo.replace(/[^a-zA-ZÀ-ÿ\s]/g, "");
   
     // Formata o nome: primeira letra maiúscula e o resto minúsculo
     const nomeFormatado = nomeLimpo.charAt(0).toUpperCase() + nomeLimpo.slice(1).toLowerCase();
@@ -28,5 +31,5 @@ function validarNome(nomeOriginal) {
   validarNome("  PantERa");
   validarNome("bella");
   validarNome("max power");
-  validarNome("  PantERa neGra   ");
+  validarNome("  Pa!ntERa ne@Gra   ");
   
