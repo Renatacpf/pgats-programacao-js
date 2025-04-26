@@ -14,11 +14,11 @@ porte, pode ser adotado independente da idade.
 */
 
     const idadeMinima = 2
-    const nomeDog = "Toby"
+    const nomeDog = 'Toby'
     const idadeDog = 10
-    const pequenoPorte = "M"
+    const pequenoPorte = 'M'
 
-    const podeAdotar = idadeDog >= idadeMinima || pequenoPorte === "P";
+    const podeAdotar = idadeDog >= idadeMinima || pequenoPorte === 'P';
 
     console.log("=== VALIDAÇÃO PARA ADOÇÃO ===");
     console.log("Nome do dog: " + nomeDog);
