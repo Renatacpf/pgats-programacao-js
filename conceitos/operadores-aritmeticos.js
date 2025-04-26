@@ -31,5 +31,15 @@ console.log((1 + 1) * 2) // 4 - adição, multiplicação ( dentro do parenteses
 
 console.log(+"5" * 2) // 10
 
+// parse
 console.log(11 / 2) // 5.5
 console.log(parseInt(11 / 2)) // 5.5 -> 5
+
+// arredondamento
+console.log(Math.floor(5.8)) // arredonda para baixo
+console.log(Math.round(5.8)) // arredonda para o mais próximo
+console.log(Math.round(5.4)) // arredonda para o mais próximo
+
+// exibição de quantidade de digitos depois do ponto
+const valorDecimal = 2.123123
+console.log(valorDecimal.toFixed(3))
