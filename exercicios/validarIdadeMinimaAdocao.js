@@ -1,3 +1,18 @@
+/*
+Validador de idade mínima para adoção
+
+Crie um script que verifique se um dog pode ser adotado com base na idade mínima definida,
+por exemplo, 2 anos.
+
+Use os operadores adequados e exiba:
+- Nome do dog
+- Idade
+- Se está apto ou não para adoção
+
+Extra: aplique uma regra com operador lógico para permitir que se o cão for de pequeno
+porte, pode ser adotado independente da idade.
+*/
+
 function verificarAdocao(nome, idade, pequenoPorte) {
     const idadeMinima = 2; // idade mínima padrão para adoção
 
@@ -8,7 +23,6 @@ function verificarAdocao(nome, idade, pequenoPorte) {
     console.log("=== VALIDAÇÃO PARA ADOÇÃO ===");
     console.log("Nome do dog: " + nome);
     console.log("Idade: " + idade + " anos");
-    console.log("Pequeno porte: " + (pequenoPorte ? "Sim" : "Não"));
     console.log("Apto para adoção? " + (podeAdotar ? "Sim" : "Não"));
     console.log("==============================");
 }
