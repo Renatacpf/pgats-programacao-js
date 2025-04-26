@@ -30,3 +30,6 @@ console.log( 1 + 1 * 2) // 3 - multiplicação, adição
 console.log((1 + 1) * 2) // 4 - adição, multiplicação ( dentro do parenteses, depois o que está fora)
 
 console.log(+"5" * 2) // 10
+
+console.log(11 / 2) // 5.5
+console.log(parseInt(11 / 2)) // 5.5 -> 5
