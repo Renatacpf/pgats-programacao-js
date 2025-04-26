@@ -47,6 +47,9 @@ const listarNomesDeDogs = () => {
     
       return nomes
 }
+
+// arrow function sem bloco + com return 'automatico'
+const dobrar = (numero) => numero * 2
   
 exibirNomeDoDog("Pipoca")
 exibirPorteDoDog()
