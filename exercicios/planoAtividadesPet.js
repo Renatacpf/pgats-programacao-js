@@ -32,7 +32,26 @@ function planoAtividades(nomeDog, porte, tempo) {
             atividade = "correr no parque";
             break;
         default:
-            atividade = "porte inválido";
+            atividade = null; // Porte inválido
+    }
+
+    // Validação de porte inválido
+    if (!atividade) {
+        console.log("=== PLANO DE ATIVIDADES ===");
+        console.log("Nome do dog:", nomeDog);
+        console.log("Porte inválido:", porte + ". Por favor, informe um porte válido (Pequeno, Médio ou Grande).");
+        console.log("============================");
+        return; // Encerra a função
+    }
+
+    // Validação de tempo inválido
+    if (tempo <= 0) {
+        console.log("=== PLANO DE ATIVIDADES ===");
+        console.log("Nome do dog:", nomeDog);
+        console.log("Porte:", porte);
+        console.log("Tempo inválido:", tempo + " minutos. Por favor, informe um tempo válido (maior que zero).");
+        console.log("============================");
+        return; // Encerra a função
     }
 
     // Ajustando mensagem conforme tempo disponível
@@ -54,7 +73,9 @@ function planoAtividades(nomeDog, porte, tempo) {
     console.log("============================");
 }
 
-// Exemplo de chamada:
-planoAtividades("Pantera", "Médio", 45);
-planoAtividades("Fofinho", "Pequeno", 10);
-planoAtividades("Thor", "Grande", 25);
+// Exemplos de chamada:
+planoAtividades("Pantera", "Médio", 45);  // OK
+planoAtividades("Fofinho", "Pequeno", 10); // OK
+planoAtividades("Thor", "Grande", 25); // OK
+planoAtividades("Thor", "Gigante", 25); // Porte inválido
+planoAtividades("Luna", "Grande", -5); // Tempo inválido
