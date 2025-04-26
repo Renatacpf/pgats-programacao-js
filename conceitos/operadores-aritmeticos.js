@@ -37,6 +37,7 @@ console.log(parseInt(11 / 2)) // 5.5 -> 5
 
 // arredondamento
 console.log(Math.floor(5.8)) // arredonda para baixo
+console.log(Math.ceil(5.2)) //  arredonda para cima
 console.log(Math.round(5.8)) // arredonda para o mais próximo
 console.log(Math.round(5.4)) // arredonda para o mais próximo
 
