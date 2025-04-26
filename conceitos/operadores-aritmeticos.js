@@ -28,3 +28,5 @@ console.log( 4 ** 4) // 256
 // precedencia - ordem de execução / prioridade
 console.log( 1 + 1 * 2) // 3 - multiplicação, adição
 console.log((1 + 1) * 2) // 4 - adição, multiplicação ( dentro do parenteses, depois o que está fora)
+
+console.log(+"5" * 2) // 10
