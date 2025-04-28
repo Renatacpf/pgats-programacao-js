@@ -5,16 +5,16 @@ não fazem parte desse desafio.
 */
 
 const contarVogais = (texto) => {
-    const vogais = ['a', 'e', 'i', 'o', 'u'];
-    return texto.split('').filter(letra => vogais.includes(letra)).length;
-  };
+    const vogais = ['a', 'e', 'i', 'o', 'u']
+    return texto.split('').filter(letra => vogais.includes(letra)).length
+  }
   
   // Exemplo de uso
-  const texto = "hoje o dia esta muito bonito e tranquilo";
-  const quantidadeDeVogais = contarVogais(texto);
+  const texto = "hoje o dia esta muito bonito e tranquilo"
+  const quantidadeDeVogais = contarVogais(texto)
   
-  console.log("=== RESULTADO DA CONTAGEM ===");
-  console.log(`Texto analisado: "${texto}"`);
-  console.log(`Quantidade de vogais encontradas: ${quantidadeDeVogais}`);
-  console.log("=============================");
+  console.log("=== RESULTADO DA CONTAGEM ===")
+  console.log(`Texto analisado: "${texto}"`)
+  console.log(`Quantidade de vogais encontradas: ${quantidadeDeVogais}`)
+  console.log("=============================")
   
