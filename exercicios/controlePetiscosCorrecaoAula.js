@@ -21,6 +21,17 @@ for (let petisco = 1; petisco <= quantidadePetiscosDisponiveis; petisco++) {
 console.log(`Satisfeito, chega de petiscos por hoje!`);
 console.log(`---------------------`)
 
+// Exemplo de aluno - extra
+
+const alimentarDog = (quantidadePetiscos) => {
+    for (let i = 1; i <= quantidadePetiscos; i++) {
+        console.log(i < quantidadePetiscos ? `Ganhei ${i} petisco. Quero mais!` : `Ganhei ${i} petisco. Agora estou satisfeito!`);
+    }
+}
+alimentarDog(4);
+
+console.log(`---------------------`)
+
 // Exemplo de aluno
 
 const quantidadePetiscosAleatoria = 4
