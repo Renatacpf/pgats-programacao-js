@@ -3,7 +3,7 @@ function geradorDeTagsDeIdentificacao(nome) {
 }
 
 function verificarSePodeSerAdotado(idade, porte) {
-  return idade >= 1 && porte === 'M';
+  return idade === 1 && porte === 'M';
 }
 
 function calcularConsumoDeRacao(nome, idade, peso) {
