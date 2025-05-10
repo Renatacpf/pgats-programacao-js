@@ -8,8 +8,8 @@ Exiba uma mensagem como: "Entregando petisco para Pantera"
 Mantenha os dados e a função em arquivos separados; use modularização para organizar.
 */
 
-const caes = ['Pantera', 'Luna', 'Thor'];
+const CAES = ['Pantera', 'Luna', 'Thor'];
 
 import { distribuirPetiscos } from './distribuidorPetiscosExport.js';
 
-distribuirPetiscos(caes);
+distribuirPetiscos(CAES);
