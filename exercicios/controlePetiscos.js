@@ -12,13 +12,13 @@ Exiba:
 Extra: transforme a lógica em uma função (da forma que conseguir)
 */
 
-function darPetiscos(quantidadeDePetiscos) {
+function controleDePetiscos(quantidadeDePetiscos) {
   for (let i = 1; i <= quantidadeDePetiscos; i++) {
-    console.log(`Petisco ${i} entregue 🍖`);
+    console.log(`🍖 Petisco ${i} entregue.`);
   }
 
-  console.log("O dog está satisfeito! 🐶❤️");
+  console.log("🐶 O dog está satisfeito! Todos os petiscos acabaram.");
 }
 
 // Exemplo de uso
-darPetiscos(4);
+controleDePetiscos(5);
