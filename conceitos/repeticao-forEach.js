@@ -37,5 +37,4 @@ listaDeAlunosENotas.forEach(aluno => {
         console.log(`O aluno ${aluno.nome} precisa do trabalho extra`)
         console.log(`A nota do aluno ${aluno.nome} é ${aluno.nota}`)
     }
-    // console.log(`O aluno ${aluno.nome} tem a nota ${aluno.nota}`)
 })
