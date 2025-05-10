@@ -14,11 +14,16 @@ function exibirNomePet(paramNomePet) {
   console.log(`O nome do pet é ${paramNomePet}`);
 }
 
+function exibirIdade(paramIdadePet) {
+  console.log(`A idade do pet é ${paramIdadePet}`);
+}
+
 // exibirNomePet(`Pipoca`)
 // exibirNomePet(`Pantera`)
 // exibirNomePet(`Rex`)
 
 // export {} / import
 export {
-    exibirNomePet
+    exibirNomePet,
+    exibirIdade
 }
