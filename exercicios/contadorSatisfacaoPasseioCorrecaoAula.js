@@ -1,41 +1,61 @@
-/* 
-Contador de Satisfação do Passeio
+/**
 
-Crie um scrip que avise quando o Dog já passeou o suficiente. Para saber, vamos considerar que
-ele se sentira satisfeito somente a partir de 5 voltas na quadra.
+  Contador de satisfação de passeio
 
-Use a estrutura de repetição while.
+  Crie um script que avise quando o Dog já passeou o suficiente. 
+  Para saber, vamos considerar que ele se sentirá satisfeito somente a partir de 5 voltas na quadra.
 
-Exiba:
-- Qual o número da volta atual
-- Quando o dog estiver satisfeito
+  Use a estrutura de repetição while.
 
-Extra: transforme a lógica em uma função (da forma que conseguir)
-*/
+  Exiba: 
+  Qual o número da volta atual
+  Quando o dog estiver satisfeito
 
-let voltasParaDogFicarSatisfeito = 5
+  Extra: transforme a lógica em uma função (da forma que conseguir)
+
+ */
+
+const voltasParaDogFicarSatisfeito = 5
 let volta = 0
 
 while (volta <= voltasParaDogFicarSatisfeito) {
-    console.log(`Volta de nº ${volta} com o Pitoco.`)
-    console.log(`O Pitoco não está satisfeito.`)  
-    volta++
+
+  console.log(`Volta de nº ${volta} com o Pitoco`)
+  console.log(`Pitoco ainda não está satisfeito!`)
+
+  volta++
 }
 
-console.log(`Acabooooou o passeio, Pitoco!`)
-console.log(`--------------------------`)
+console.log(`Acaboooooou o passeio, Pitoco!`)
+console.log(`----------------------------`)
+// com a função (extra)
+function verificarSeEstaSatisfeito() {
 
-function passeioComDog(voltasParaSatisfacao) {
-  let volta = 0;
+  const voltasParaDogFicarSatisfeito = 5
+  let volta = 0
 
-  while (volta <= voltasParaSatisfacao) {
-    console.log(`Volta de nº ${volta} com o Pitoco.`);
-    console.log(`O Pitoco não está satisfeito.`);
-    volta++;
+  while (volta <= voltasParaDogFicarSatisfeito) {
+
+    console.log(`Volta de nº ${volta} com o Pitoco`)
+    console.log(`Pitoco ainda não está satisfeito!`)
+
+    volta++
   }
 
-  console.log(`Acabooooou o passeio, Pitoco!`);
+  console.log(`Acaboooooou o passeio, Pitoco!`)
 }
 
-// Exemplo de uso:
-passeioComDog(5);
+verificarSeEstaSatisfeito(10)
+
+// let nVoltas = 0
+
+// while (nVoltas <= 4) {
+
+//   if (nVoltas < 4)
+//     console.log("Eu nao estou satisfeito")
+//   else console.log("Eu estou satisfeito")
+
+//   console.log(`Volta ${nVoltas + 1}`)
+
+//   nVoltas++
+// }
