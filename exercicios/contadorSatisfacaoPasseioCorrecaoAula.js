@@ -23,3 +23,19 @@ while (volta <= voltasParaDogFicarSatisfeito) {
 }
 
 console.log(`Acabooooou o passeio, Pitoco!`)
+console.log(`--------------------------`)
+
+function passeioComDog(voltasParaSatisfacao) {
+  let volta = 0;
+
+  while (volta <= voltasParaSatisfacao) {
+    console.log(`Volta de nº ${volta} com o Pitoco.`);
+    console.log(`O Pitoco não está satisfeito.`);
+    volta++;
+  }
+
+  console.log(`Acabooooou o passeio, Pitoco!`);
+}
+
+// Exemplo de uso:
+passeioComDog(5);
