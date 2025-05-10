@@ -44,3 +44,13 @@ const brinquedosComNomeECor = [
 brinquedosComNomeECor.forEach(brinquedo => {
     console.log(`Entregando o brinquedo: ${brinquedo.nome} - ${brinquedo.cor}`)
 })
+
+console.log(`---------------------`)
+
+//Exemplo de aluno - extra
+
+function entregarBrinquedos(brinquedos) {
+    brinquedos.forEach((brinquedo, i) => {
+        console.log(`Entregando brinquedo ${i + 1}: ${brinquedo}`);
+    });
+}
