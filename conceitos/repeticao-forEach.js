@@ -32,7 +32,10 @@ function notaDoLucas(){
 
 console.log(`--------------------------------`)
 
-listaDeAlunosENotas.forEach(aluno => {
+listaDeAlunosENotas.forEach((aluno, index) => {
+    console.log(`Index do aluno ${aluno.nome} é ${index}`)
+    console.log(`A nota do aluno ${aluno.nome} é ${aluno.nota}`)
+    console.log(`--------------------------------`)
     if (aluno.nota < 7) {
         console.log(`O aluno ${aluno.nome} precisa do trabalho extra`)
         console.log(`A nota do aluno ${aluno.nome} é ${aluno.nota}`)
