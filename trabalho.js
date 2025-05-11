@@ -1,22 +1,53 @@
 function geradorDeTagsDeIdentificacao(nome) {
-  return nome.toUpperCase();
+  const nomeFormatado = nome.trim().toUpperCase()
+
+  return nomeFormatado
 }
 
 function verificarSePodeSerAdotado(idade, porte) {
-  return idade === 1 && porte === 'M';
+  const portesValidos = ['P', 'M', 'G']
+
+  if (typeof idade !== 'number' || idade <= 0) {
+    throw new Error('Idade inválida. Esperado: número maior que 0.')
+  }
+
+  if (!portesValidos.includes(porte)) {
+    throw new Error(`Porte inválido. Use um dos seguintes: ${portesValidos.join(', ')}`)
+  }
+
+  const podeAdotar = idade === 1 && porte === 'M'
+  return podeAdotar
 }
 
 function calcularConsumoDeRacao(nome, idade, peso) {
-  return peso * 300;
+  const gramasPorDia = 300
+  const consumoTotal = peso * gramasPorDia
+
+  return Math.round(consumoTotal);
 }
 
 function decidirTipoDeAtividadePorPorte(porte) {
-  const atividades = {
-    pequeno: 'brincar dentro de casa',
-    medio: 'caminhadas no bairro',
-    grande: 'correr no parque'
-  };
-  return atividades[porte];
+  let atividade
+  const portesValidos = ['pequeno', 'médio', 'grande']
+
+  if (!portesValidos.includes(porte)) {
+    throw new Error(`Porte inválido. Use um dos seguintes: ${portesValidos.join(', ')}`)
+  }
+
+  switch (porte) {
+  case 'pequeno':
+    atividade = `brincar dentro de casa`
+    break
+  case 'médio':
+    atividade = `caminhada no quarteirão`
+    break
+  case 'grande':
+    atividade = `correr no parque`
+    break 
+  default:
+    atividade = `porte inválido`
+  }
+  return atividade;
 }
 
 async function buscarDadoAsync() {
