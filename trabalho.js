@@ -35,17 +35,17 @@ function decidirTipoDeAtividadePorPorte(porte) {
   }
 
   switch (porte) {
-  case 'pequeno':
-    atividade = `brincar dentro de casa`
-    break
-  case 'médio':
-    atividade = `caminhada no quarteirão`
-    break
-  case 'grande':
-    atividade = `correr no parque`
-    break 
-  default:
-    atividade = `porte inválido`
+    case 'pequeno':
+      atividade = `brincar dentro de casa`
+      break
+    case 'médio':
+      atividade = `caminhada no quarteirão`
+      break
+    case 'grande':
+      atividade = `correr no parque`
+      break
+    default:
+      atividade = `porte inválido`
   }
   return atividade;
 }
@@ -56,7 +56,7 @@ async function buscarDadoAsync() {
   });
 }
 
-export  {
+export {
   geradorDeTagsDeIdentificacao,
   verificarSePodeSerAdotado,
   calcularConsumoDeRacao,
