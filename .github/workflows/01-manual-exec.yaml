@@ -42,7 +42,7 @@ jobs:
         if: ${{ !cancelled() }}
         with:
             name: relatorio
-            path: mochawesome-report/mochawesome.html
+            path: mochawesome-report/
 
       # Gera o relatório após os testes
       - name: Publicar resultado no PR
