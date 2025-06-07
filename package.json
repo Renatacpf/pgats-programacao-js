@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "rm -rf mochawesome-report/ test-results/ && mkdir -p mochawesome-report test-results && mocha testes/**/*.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=mochawesome.html,overwrite=true,json=false --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results.xml",
-    "test:final": "rm -rf mochawesome-report/ test-results/ && mkdir -p mochawesome-report test-results && mocha testes/trabalho-final.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=mochawesome.html,overwrite=true,json=false --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results.xml"
+    "test": "mocha testes/**/*.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=mochawesome.html,overwrite=true,json=false --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results.xml",
+    "test:final": "mocha testes/trabalho-final.js --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=mochawesome.html,overwrite=true,json=false --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results/results.xml"
   },
   "repository": {
     "type": "git",
