@@ -1,0 +1,48 @@
+# CI de Nível 01 - Disparo manual a partir de 1 clique
+
+# nome do nosso 'pipeline'
+name: 'Execução Manual'
+
+# regras de disparo (gatilhos/triggers)
+# gatilho de exec manual = workflow_dispatch
+on:
+  workflow_dispatch:
+
+# trabalhos/tarefas dentro do pipeline = jobs
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # clone do projeto
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+          clean: true
+          fetch-depth: 0
+
+      # instalação do Node.js
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+
+      # instalação do Yarn
+      - name: Instalando Yarn
+        run: npm install -g yarn
+
+      # instalação das dependências
+      - name: Instalando dependências
+        run: yarn
+
+      # execução dos testes
+      - name: Executando testes com Mocha
+        run: yarn test
+
+      # Gera o relatório após os testes
+      - name: Publicar resultado no PR
+        uses: dorny/test-reporter@v1
+        if: ${{ !cancelled() }}
+        with:
+          name: Test Report
+          path: ./test-results/results.xml
+          reporter: java-junit
