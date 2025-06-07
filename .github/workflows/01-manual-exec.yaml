@@ -10,7 +10,7 @@ on:
 
 # trabalhos/tarefas dentro do pipeline = jobs
 jobs:
-  e2e-tests:
+  unit-tests:
     runs-on: ubuntu-latest
 
     steps:
