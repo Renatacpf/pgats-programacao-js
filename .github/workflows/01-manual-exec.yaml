@@ -38,6 +38,12 @@ jobs:
       - name: Executando testes com Mocha
         run: yarn test:final
 
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+            name: relatorio
+            path: mochawesome-report/mochawesome.html
+
       # Gera o relatório após os testes
       - name: Publicar resultado no PR
         uses: dorny/test-reporter@v1
