@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.122" tests="8" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-06-07T19:59:13" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Testes do Projeto" timestamp="2025-06-07T19:59:13" tests="3" file="C:\Users\User\Renata\PosGraduacao\ProjetosJavaScript\pgats-programacao-js\testes\01-testes.js" time="0.014" failures="1">
+    <testcase name="Testes do Projeto deve exibir o nome do dog com letras maiúsculas" time="0.000" classname="deve exibir o nome do dog com letras maiúsculas">
+    </testcase>
+    <testcase name="Testes do Projeto primeiro teste" time="0.000" classname="primeiro teste">
+    </testcase>
+    <testcase name="Testes do Projeto segundo teste" time="0.000" classname="segundo teste">
+      <failure message="" type="Error"><![CDATA[Error
+    at Context.<anonymous> (file:///C:/Users/User/Renata/PosGraduacao/ProjetosJavaScript/pgats-programacao-js/testes/01-testes.js:31:15)
+    at process.processImmediate (node:internal/timers:491:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Testes da disciplina - fundamentos JS" timestamp="2025-06-07T19:59:13" tests="5" file="C:\Users\User\Renata\PosGraduacao\ProjetosJavaScript\pgats-programacao-js\testes\trabalho-final.js" time="0.105" failures="0">
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO informar um nome para o Pet, DEVE ser impresso na tag com letras maiúsculas" time="0.000" classname="QUANDO informar um nome para o Pet, DEVE ser impresso na tag com letras maiúsculas">
+    </testcase>
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO a idade = 1 + porte M, DEVE ser permitida a adoção" time="0.000" classname="QUANDO a idade = 1 + porte M, DEVE ser permitida a adoção">
+    </testcase>
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO o peso = 14.5, DEVE ser retornado 4350 gramas para o consumo diário" time="0.000" classname="QUANDO o peso = 14.5, DEVE ser retornado 4350 gramas para o consumo diário">
+    </testcase>
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO o porte = pequeno, DEVE ser retornada a atividade adequada" time="0.000" classname="QUANDO o porte = pequeno, DEVE ser retornada a atividade adequada">
+    </testcase>
+    <testcase name="Testes da disciplina - fundamentos JS QUANDO buscar dado de exemplo, DEVE retornar um valor de forma assíncrona" time="0.105" classname="QUANDO buscar dado de exemplo, DEVE retornar um valor de forma assíncrona">
+    </testcase>
+  </testsuite>
+</testsuites>
