@@ -36,7 +36,7 @@ jobs:
 
       # execução dos testes
       - name: Executando testes com Mocha
-        run: yarn test
+        run: yarn test:final
 
       # Gera o relatório após os testes
       - name: Publicar resultado no PR
@@ -46,3 +46,4 @@ jobs:
           name: Test Report
           path: ./test-results/results.xml
           reporter: java-junit
+          token: ${{ secrets.GITHUB_TOKEN }}
